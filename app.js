@@ -21,12 +21,14 @@ app.post('/sign_up', function(req,res){
     var name = req.body.name; 
     var email = req.body.email; 
     var pass = req.body.password; 
+    var cpass = req.body.confirm;
     var phone = req.body.phone; 
   
     var data = { 
         "name" : name, 
         "email" : email, 
         "password" : pass, 
+        "confirm" : cpass,
         "phone" : phone 
     } 
 
